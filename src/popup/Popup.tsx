@@ -43,7 +43,7 @@ const Popup: React.FC = () => {
   if (loading) {
     return (
       <div className="flex h-full items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-t-2 border-blue-500"></div>
+        <div className="h-8 w-8 animate-spin rounded-full border-t-2 border-b-2 border-blue-500"></div>
       </div>
     );
   }
@@ -68,7 +68,7 @@ const Popup: React.FC = () => {
           <span>启用扩展</span>
           <button
             onClick={handleToggleEnabled}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${settings.enabled ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'}`}
+            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-hidden ${settings.enabled ? 'bg-blue-600' : 'bg-gray-200 dark:bg-gray-700'}`}
             aria-label={settings.enabled ? '禁用扩展' : '启用扩展'}
           >
             <span
